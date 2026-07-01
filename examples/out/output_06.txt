@@ -1,0 +1,12 @@
+Running examples/06_automatic_differentiation.jl in Podman container...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1782850863.456168       1 pjrt_api.cc:118] GetPjrtApi was found for tpu at /root/.julia/scratchspaces/3c362404-f566-11ee-1572-e11a4b42c853/libtpu/libtpu-0_0_39_dev20260328.so
+I0000 00:00:1782850863.456253       1 pjrt_api.cc:96] PJRT_Api is set for device type tpu
+I0000 00:00:1782850863.456262       1 pjrt_api.cc:167] The PJRT plugin has PJRT API version 0.103. The framework PJRT API version is 0.103.
+I0000 00:00:1782850865.437340       1 pjrt_c_api_client.cc:182] PjRtCApiClient created.
+Experiment 05: AD complete. Gradients:
+4-element Vector{Float32}:
+ 2.0
+ 4.0
+ 6.0
+ 8.0

@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Julia on TPU: Reproducible Examples and Benchmarks"
+authors:
+  - family-names: Brachetta
+    given-names: Vincenzo
+    affiliation: "University of Birmingham, UK"
+    email: v.brachetta@bham.ac.uk
+    orcid: "https://orcid.org/0009-0008-3553-0163"
+version: "1.0.0"
+date-released: "2026-06-30"
+license: MIT
+repository-code: "https://github.com/vbrachetta/julia-on-tpu"
+url: "https://github.com/vbrachetta/julia-on-tpu"
+doi: "10.5281/zenodo.XXXXXXX"
+keywords:
+  - Julia
+  - TPU
+  - Reactant
+  - XLA
+  - HPC
+  - scientific computing
+  - machine learning
+  - benchmarking
+abstract: >
+  This work documents a systematic investigation of the Julia programming
+  language on Google Tensor Processing Unit (TPU) hardware, using Reactant.jl
+  and the XLA compiler as the execution backend. It provides nine self-contained
+  example scripts covering progressively advanced numerical workloads, together
+  with five quantitative benchmarks comparing Julia/Reactant against Python/JAX
+  across matrix multiplication, vector dot product, random number generation,
+  batched matrix multiplication, and gradient computation workloads. A
+  containerised execution environment is provided for Docker, Podman, and
+  Apptainer, alongside full documentation of installation methods and known
+  issues on Google Cloud TPU VMs. A key methodological finding is that
+  Reactant/XLA kernel dispatch is asynchronous by default, and naive timing
+  without explicit synchronisation underestimates wall-clock time by up to 57x
+  at large problem sizes.

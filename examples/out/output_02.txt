@@ -1,0 +1,22 @@
+Running examples/02_matrix_mul_float32.jl in Podman container...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1782850681.382093       1 pjrt_api.cc:118] GetPjrtApi was found for tpu at /root/.julia/scratchspaces/3c362404-f566-11ee-1572-e11a4b42c853/libtpu/libtpu-0_0_39_dev20260328.so
+I0000 00:00:1782850681.382171       1 pjrt_api.cc:96] PJRT_Api is set for device type tpu
+I0000 00:00:1782850681.382180       1 pjrt_api.cc:167] The PJRT plugin has PJRT API version 0.103. The framework PJRT API version is 0.103.
+I0000 00:00:1782850683.285800       1 pjrt_c_api_client.cc:182] PjRtCApiClient created.
+--- Original Matrices (CPU) ---
+3×3 Matrix{Float32}:
+ 1.0  2.0  3.0
+ 4.0  5.0  6.0
+ 7.0  8.0  9.0
+
+3×3 Matrix{Float32}:
+ 9.0  8.0  7.0
+ 6.0  5.0  4.0
+ 3.0  2.0  1.0
+
+--- Result of A * B (Calculated on TPU) ---
+3×3 Matrix{Float32}:
+  30.0   24.0  18.0
+  84.0   69.0  54.0
+ 138.0  114.0  90.0

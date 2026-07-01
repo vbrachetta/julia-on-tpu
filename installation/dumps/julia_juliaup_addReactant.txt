@@ -1,0 +1,40 @@
+julia
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.12.5 (2026-02-09)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org release
+|__/                   |
+
+(@v1.12) pkg> add Reactant
+  Installing known registries into `~/.julia`
+munmap_chunk(): invalid pointer
+
+[3136144] signal 6 (-6): Aborted
+in expression starting at none:0
+pthread_kill at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+raise at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+abort at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x7fda21e89676) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x7fda21ea0cfb) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x7fda21ea0fdb) at /lib/x86_64-linux-gnu/libc.so.6
+free at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+Curl_parsenetrc at /home/vincenzo_brachetta/.julia/juliaup/julia-1.12.5+0.x64.linux.gnu/bin/../lib/julia/libcurl.so.4 (unknown line)
+Curl_connect at /home/vincenzo_brachetta/.julia/juliaup/julia-1.12.5+0.x64.linux.gnu/bin/../lib/julia/libcurl.so.4 (unknown line)
+multi_runsingle at /home/vincenzo_brachetta/.julia/juliaup/julia-1.12.5+0.x64.linux.gnu/bin/../lib/julia/libcurl.so.4 (unknown line)
+multi_run_dirty at /home/vincenzo_brachetta/.julia/juliaup/julia-1.12.5+0.x64.linux.gnu/bin/../lib/julia/libcurl.so.4 (unknown line)
+multi_socket.isra.9 at /home/vincenzo_brachetta/.julia/juliaup/julia-1.12.5+0.x64.linux.gnu/bin/../lib/julia/libcurl.so.4 (unknown line)
+curl_multi_socket_action at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/Downloads/src/Curl/Curl.jl:51 [inlined]
+curl_multi_socket_action at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/Downloads/src/Curl/Curl.jl:59 [inlined]
+macro expansion at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/Downloads/src/Curl/utils.jl:51 [inlined]
+do_multi at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/Downloads/src/Curl/Multi.jl:130
+#timer_callback##2 at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/Downloads/src/Curl/Multi.jl:148 [inlined]
+lock at ./lock.jl:335
+#634 at ./asyncevent.jl:357
+jfptr_YY.634_3222.1 at /home/vincenzo_brachetta/.julia/juliaup/julia-1.12.5+0.x64.linux.gnu/share/julia/compiled/v1.12/Downloads/eiA4B_ZarBC.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+start_task at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/src/task.c:1252
+Allocations: 1252136 (Pool: 1252050; Big: 86); GC: 2
+Aborted (core dumped)

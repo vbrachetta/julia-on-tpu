@@ -1,0 +1,8 @@
+Running examples/07_data_reductions.jl in Podman container...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1782850976.318776       1 pjrt_api.cc:118] GetPjrtApi was found for tpu at /root/.julia/scratchspaces/3c362404-f566-11ee-1572-e11a4b42c853/libtpu/libtpu-0_0_39_dev20260328.so
+I0000 00:00:1782850976.318842       1 pjrt_api.cc:96] PJRT_Api is set for device type tpu
+I0000 00:00:1782850976.318850       1 pjrt_api.cc:167] The PJRT plugin has PJRT API version 0.103. The framework PJRT API version is 0.103.
+I0000 00:00:1782850978.240615       1 pjrt_c_api_client.cc:182] PjRtCApiClient created.
+Experiment 06: Reductions Complete.
+Sum: ConcretePJRTNumber{Float32, 1}(2.0971366f6), Mean: ConcretePJRTNumber{Float32, 1}(0.49999633f0), Max: ConcretePJRTNumber{Float32, 1}(0.9999999f0)

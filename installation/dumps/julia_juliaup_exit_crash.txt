@@ -1,0 +1,33 @@
+julia
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.12.5 (2026-02-09)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org release
+|__/                   |
+
+julia> 
+free(): invalid pointer
+
+[3135212] signal 6 (-6): Aborted
+in expression starting at none:0
+pthread_kill at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+raise at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+abort at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x7f380c089676) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x7f380c0a0cfb) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x7f380c0a2a43) at /lib/x86_64-linux-gnu/libc.so.6
+free at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+close_unit_1 at /workspace/srcdir/gcc-14.2.0/libgfortran/io/unit.c:778
+close_units at /workspace/srcdir/gcc-14.2.0/libgfortran/io/unit.c:836
+unknown function (ip: 0x7f380c77d24d) at /lib64/ld-linux-x86-64.so.2
+unknown function (ip: 0x7f380c045494) at /lib/x86_64-linux-gnu/libc.so.6
+exit at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+main at /cache/build/builder-amdci5-3/julialang/julia-release-1-dot-12/cli/loader_exe.c:61
+unknown function (ip: 0x7f380c029d8f) at /lib/x86_64-linux-gnu/libc.so.6
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+Allocations: 1 (Pool: 1; Big: 0); GC: 0
+Aborted (core dumped)

@@ -1,0 +1,11 @@
+FROM docker.io/library/julia:1.12.5
+
+# Install and precompile Julia packages in a single layer
+# Note: first build may take a while as packages are compiled
+RUN julia -e 'using Pkg; \
+    Pkg.add(["Reactant", "Enzyme", "BenchmarkTools", "BFloat16s"]); \
+    Pkg.precompile()'
+
+WORKDIR /workspace
+
+CMD ["/bin/bash"]
