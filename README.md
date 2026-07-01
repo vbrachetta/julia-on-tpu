@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.XXXXXXX">
-    <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-blue" alt="DOI">
+  <a href="https://doi.org/10.5281/zenodo.21102151">
+    <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21102151-blue" alt="DOI">
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
@@ -243,7 +243,7 @@ If you use this work in your research, please cite it as follows:
   year      = {2026},
   publisher = {Zenodo},
   url       = {https://github.com/vbrachetta/julia-on-tpu},
-  doi       = {10.5281/zenodo.XXXXXXX}
+  doi       = {10.5281/zenodo.21102151}
 }
 ```
 
