@@ -9,7 +9,7 @@ authors:
     email: v.brachetta@bham.ac.uk
     orcid: "https://orcid.org/0009-0008-3553-0163"
 version: "1.0.0"
-date-released: "2026-06-30"
+date-released: "2026-07-01"
 license: MIT
 repository-code: "https://github.com/vbrachetta/julia-on-tpu"
 url: "https://github.com/vbrachetta/julia-on-tpu"
